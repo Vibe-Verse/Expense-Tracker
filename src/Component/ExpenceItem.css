@@ -1,0 +1,47 @@
+.expense-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #4b4b4b;
+  border-radius: 12px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.expense-item__description {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+.expense-item__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.expense-item__price {
+  font-size: 1.25rem;
+  background-color: #40005d;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.delete-btn {
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}

@@ -1,0 +1,34 @@
+{
+  "expenses": [
+    {
+      "id": "e1",
+      "title": "school fees",
+      "amount": 250,
+      "date": "2025-06-01"
+    },
+    {
+      "id": "e2",
+      "title": "Book",
+      "amount": 260,
+      "date": "2025-06-10"
+    },
+    {
+      "id": "e3",
+      "title": "House Rent",
+      "amount": 270,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "e4",
+      "title": "Food and travel",
+      "amount": 280,
+      "date": "2025-06-20"
+    },
+    {
+      "id": "0.26130307357978877",
+      "title": "Mobile Emi",
+      "amount": "3500",
+      "date": "2025-07-24T00:00:00.000Z"
+    }
+  ]
+}
