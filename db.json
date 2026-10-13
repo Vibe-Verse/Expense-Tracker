@@ -1,3 +1,28 @@
 {
-  "expenses": []
+  "expenses": [
+    {
+      "title": "Salary",
+      "amount": "500000",
+      "date": "2026-01-10T00:00:00.000Z",
+      "type": "income",
+      "category": "Salary",
+      "id": "0.49475352908891723"
+    },
+    {
+      "title": "Mobile",
+      "amount": "50000",
+      "date": "2026-10-12T00:00:00.000Z",
+      "type": "expense",
+      "category": "Shopping",
+      "id": "0.3596069799403775"
+    },
+    {
+      "title": "Dominos",
+      "amount": "250",
+      "date": "2026-11-01T00:00:00.000Z",
+      "type": "expense",
+      "category": "Food",
+      "id": "0.9431070218570896"
+    }
+  ]
 }
