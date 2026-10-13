@@ -1,0 +1,125 @@
+.layout {
+  display: flex;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  padding: 2rem 2rem 4rem;
+}
+
+.content {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 1.5rem;
+}
+
+.page-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.page-header p {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.view {
+  animation: view-in 0.28s ease;
+}
+
+.narrow-view {
+  max-width: 640px;
+}
+
+@keyframes view-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.summary__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.1rem 1.2rem;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(160deg, var(--glass), var(--glass-2));
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.summary__card::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--primary), var(--accent));
+}
+
+.summary__card--income::after {
+  background: linear-gradient(180deg, #22c55e, #059669);
+}
+
+.summary__card--expense::after {
+  background: linear-gradient(180deg, #f43f5e, #e11d48);
+}
+
+.summary__card--balance::after {
+  background: linear-gradient(180deg, #a855f7, #6366f1);
+}
+
+.summary__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.summary__value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .main {
+    width: 100%;
+    padding: 1.5rem 1.25rem 3rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-header h2 {
+    font-size: 1.35rem;
+  }
+}
